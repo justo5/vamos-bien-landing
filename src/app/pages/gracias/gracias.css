@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0f0f0f;
+  text-align: center;
+  padding: 2rem;
+}
+.card {
+  background: #1a1a1a;
+  border: 1px solid rgba(67,160,71,.3);
+  border-top: 3px solid #43A047;
+  border-radius: 18px;
+  padding: 3rem 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.icon { font-size: 3.5rem; margin-bottom: 1.2rem; }
+h1 { font-size: 1.6rem; font-weight: 900; margin-bottom: .8rem; line-height: 1.2; }
+p { font-size: .92rem; color: rgba(255,255,255,.7); line-height: 1.7; margin-bottom: 1.5rem; }
+.timer { font-size: .78rem; color: rgba(255,255,255,.4); }
+.bar-wrap { background: rgba(255,255,255,.1); border-radius: 4px; height: 4px; margin-top: 1.5rem; overflow: hidden; }
+.bar { height: 100%; background: #43A047; border-radius: 4px; animation: fill 4s linear forwards; }

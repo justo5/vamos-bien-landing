@@ -1,0 +1,27 @@
+
+<div class="top-bar"><div class="top-bar-track"><div class="top-bar-inner">
+  <span>⭐ 4.9 en Google</span><span class="tbsep">·</span>
+  <span>800+ clientes en Argentina, Uruguay y Paraguay</span><span class="tbsep">·</span>
+  <span>💚 Honorarios a mes vencido, sin riesgo</span><span class="tbsep">·</span>
+  <span>90% de clientes renueva cada mes</span><span class="tbsep">·</span>
+  <span>⭐ 4.9 en Google</span><span class="tbsep">·</span>
+  <span>800+ clientes en Argentina, Uruguay y Paraguay</span><span class="tbsep">·</span>
+  <span>💚 Honorarios a mes vencido, sin riesgo</span><span class="tbsep">·</span>
+  <span>90% de clientes renueva cada mes</span><span class="tbsep">·</span>
+</div></div></div>
+
+<nav>
+  <a class="logo-a" [routerLink]="['/']">
+    <img src="logo.png" alt="Vamos Bien" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">
+    <div class="logo-t">Vamos Bien <span>Marketing Digital</span></div>
+  </a>
+  <ul class="nav-ul" [class.open]="menuOpen">
+    <li><a [routerLink]="['/']" [fragment]="'planes'" (click)="closeMenu()">Planes</a></li>
+    <li><a [routerLink]="['/']" [fragment]="'resultados'" (click)="closeMenu()">Resultados</a></li>
+    <li><a [routerLink]="['/']" [fragment]="'faq'" (click)="closeMenu()">FAQ</a></li>
+    <li><a [routerLink]="['/']" [fragment]="'formulario'" class="nav-form-cta" (click)="closeMenu()">Quiero empezar →</a></li>
+  </ul>
+  <button class="nav-hamburger" [class.open]="menuOpen" (click)="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>

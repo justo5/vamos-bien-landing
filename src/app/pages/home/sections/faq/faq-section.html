@@ -1,0 +1,19 @@
+<section id="faq">
+  <div class="c">
+    <div class="rv">
+      <p class="s-label">Preguntas frecuentes</p>
+      <h2 class="s-title">Lo que nos preguntan<br>antes de empezar</h2>
+    </div>
+    <div class="faq-l rv">
+      @for (item of faqItems; track $index) {
+        <div class="faq-i" [class.open]="openFaqIndex === $index">
+          <button class="faq-q" (click)="toggleFaq($index)">
+            {{ item.q }}<span class="faq-ic">+</span>
+          </button>
+          <div class="faq-a"><div class="faq-ai">{{ item.a }}</div></div>
+        </div>
+      }
+    </div>
+    <a [routerLink]="['/']" [fragment]="'formulario'" class="wa-mid rv" (click)="trackFbq('ViewContent',{content_name:'CTA FAQ'})" style="justify-content:center;">Completar el formulario →</a>
+  </div>
+</section>

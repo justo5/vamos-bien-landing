@@ -1,0 +1,40 @@
+<div class="hero-gradient-wrap">
+  <div class="hero">
+    <div class="hero-l">
+      <div class="badge">Anticipadamente no pagás nada</div>
+      <h1>Meta Ads que<br><span class="ca">generan ventas</span><br><span class="cv">de verdad.</span></h1>
+      <p class="hero-sub"><strong>El 80% de nuestros clientes aumenta sus ventas entre 50% y 120% en los primeros 90 días.</strong> Nos ocupamos de todo: estrategia, creativos y optimización diaria.</p>
+      <p class="hero-nota">Sin pago anticipado · Honorarios a 30 días · Respuesta en menos de 24hs</p>
+      <div class="google-badge-hero">
+        <img src="logo.png" alt="Vamos Bien" style="width:18px;height:18px;object-fit:contain;border-radius:3px;">
+        <span style="font-size:.78rem;font-weight:700;font-family:var(--fh);color:var(--text);">4.9</span>
+        <span style="color:#FBBC04;font-size:.85rem;letter-spacing:1px;">★★★★★</span>
+        <span style="font-size:.75rem;color:var(--text-3);font-family:var(--fh);">110 reseñas en Google</span>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hs-n v">90%</div><div class="hs-l">renueva cada mes</div></div>
+        <div><div class="hs-n a">80%</div><div class="hs-l">sube ventas en 90 días</div></div>
+        <div><div class="hs-n n">120%</div><div class="hs-l">crecimiento máximo</div></div>
+      </div>
+      <div style="margin-top:2rem;">
+        <a [routerLink]="['/']" [fragment]="'formulario'" (click)="trackFbq('ViewContent', {content_name:'CTA Hero'})" class="hero-form-cta">
+          Quiero que me traigan clientes →
+        </a>
+        <p style="margin-top:.6rem;font-size:.68rem;color:rgba(255,255,255,.5);font-family:var(--fh);">Sin pago anticipado · Honorarios a 30 días</p>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="vid-wrap" id="vidWrap">
+        <video id="heroVideo" controls playsinline preload="auto" (ended)="onVideoEnded()" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:15px;">
+          <source src="resources/video.mp4" type="video/mp4">
+        </video>
+        <div class="vid-overlay" [class.hidden]="videoOverlayHidden" (click)="onVideoOverlayClick()">
+          <button class="vid-play-btn" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="vid-overlay-text">▶ Ver video con audio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

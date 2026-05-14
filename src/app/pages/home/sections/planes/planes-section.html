@@ -1,0 +1,89 @@
+<section id="planes" style="background:var(--bg);padding:5rem 0 4.5rem;overflow:hidden;">
+  <div class="plv3-wrap">
+    <div class="rv" style="text-align:center;margin-bottom:.5rem;">
+      <span class="badge" style="margin-bottom:1rem;display:inline-block;">Nuestros Planes</span>
+      <h2 class="s-title" style="margin-bottom:.8rem;">Elegí cómo querés<br>crecer con nosotros</h2>
+      <p style="color:var(--text-3);font-size:.91rem;max-width:520px;margin:0 auto;line-height:1.7;">Todos los planes incluyen gestión Meta Ads, revisión estratégica mensual y soporte WhatsApp.</p>
+    </div>
+    <div class="plv3-grid">
+      <!-- PLAN FOCUS -->
+      <div class="plv3-card rv">
+        <div class="plv3-bar plv3-bar-azul"></div>
+        <div class="plv3-head">
+          <div class="plv3-name">Plan Focus</div>
+          <div class="plv3-tag plv3-tag-azul">Solo gestión</div>
+          <div class="plv3-price-row"><span class="plv3-cur">U$D</span><span class="plv3-amt plv3-amt-azul">350</span><span class="plv3-per">/mes</span></div>
+          <p class="plv3-desc">Tenés creatividades propias. Nosotros ponemos la estrategia y optimizamos cada peso en Meta.</p>
+        </div>
+        <div class="plv3-feats">
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-azul">📊</div><span class="plv3-feat-text txt-on">Gestión Meta Ads</span><span class="plv3-tick tk-azul">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-azul">📅</div><span class="plv3-feat-text txt-on">Plan del Mes</span><span class="plv3-tick tk-azul">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-azul">💬</div><span class="plv3-feat-text txt-on">Soporte WhatsApp</span><span class="plv3-tick tk-azul">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-off">🎨</div><span class="plv3-feat-text txt-off">Creatividades</span><span class="plv3-tick tk-off">—</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-off">🤖</div><span class="plv3-feat-text txt-off">Bot IA WhatsApp</span><span class="plv3-tick tk-off">—</span></div>
+        </div>
+        <a [routerLink]="['/']" [fragment]="'formulario'" class="plv3-btn plv3-btn-azul" (click)="trackFbq('ViewContent',{content_name:'CTA Plan Focus'})">Quiero este plan →</a>
+      </div>
+      <!-- PLAN CREATIVO -->
+      <div class="plv3-card plv3-feat rv">
+        <div class="plv3-bar plv3-bar-verde"></div>
+        <div class="plv3-popular">⭐ Más elegido</div>
+        <div class="plv3-head">
+          <div class="plv3-name">Plan Creativo</div>
+          <div class="plv3-tag plv3-tag-verde">Gestión + Creatividades</div>
+          <div class="plv3-price-row"><span class="plv3-cur">U$D</span><span class="plv3-amt plv3-amt-verde">490</span><span class="plv3-per">/mes</span></div>
+          <p class="plv3-desc">No sabés diseñar ni editar. Nosotros creamos los anuncios y los gestionamos. Vos solo recibís consultas.</p>
+        </div>
+        <div class="plv3-feats">
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-verde">📊</div><span class="plv3-feat-text txt-on">Gestión Meta Ads</span><span class="plv3-tick tk-verde">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-verde">📅</div><span class="plv3-feat-text txt-on">Plan del Mes</span><span class="plv3-tick tk-verde">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-verde">💬</div><span class="plv3-feat-text txt-on">Soporte WhatsApp</span><span class="plv3-tick tk-verde">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-verde">🎨</div><span class="plv3-feat-text txt-on">Creatividades para anuncios</span><span class="plv3-tick tk-verde">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-off">🤖</div><span class="plv3-feat-text txt-off">Bot IA WhatsApp</span><span class="plv3-tick tk-off">—</span></div>
+        </div>
+        <a [routerLink]="['/']" [fragment]="'formulario'" class="plv3-btn plv3-btn-verde" (click)="trackFbq('ViewContent',{content_name:'CTA Plan Creativo'})">Quiero este plan →</a>
+      </div>
+      <!-- PLAN BOT -->
+      <div class="plv3-card rv">
+        <div class="plv3-bar plv3-bar-teal"></div>
+        <div class="plv3-head">
+          <div class="plv3-name">Plan Bot</div>
+          <div class="plv3-tag plv3-tag-teal">Gestión + Bot IA</div>
+          <div class="plv3-price-row"><span class="plv3-cur">U$D</span><span class="plv3-amt plv3-amt-teal">550</span><span class="plv3-per">/mes</span></div>
+          <p class="plv3-desc">Generás leads pero perdés ventas por no responder a tiempo. El Bot IA atiende cada consulta en 2 segundos, 24 hs.</p>
+        </div>
+        <div class="plv3-feats">
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-teal">📊</div><span class="plv3-feat-text txt-on">Gestión Meta Ads</span><span class="plv3-tick tk-teal">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-teal">📅</div><span class="plv3-feat-text txt-on">Plan del Mes</span><span class="plv3-tick tk-teal">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-teal">💬</div><span class="plv3-feat-text txt-on">Soporte WhatsApp</span><span class="plv3-tick tk-teal">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-off">🎨</div><span class="plv3-feat-text txt-off">Creatividades</span><span class="plv3-tick tk-off">—</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-teal">🤖</div><span class="plv3-feat-text txt-on">Bot IA 24/7 · califica leads</span><span class="plv3-tick tk-teal">✓</span></div>
+        </div>
+        <div class="plv3-bonus" style="color:#26A69A;background:rgba(0,105,92,.1);border:1px solid rgba(38,166,154,.3);">🎁 Setup IA bonificado · Valor U$D 200</div>
+        <a [routerLink]="['/']" [fragment]="'formulario'" class="plv3-btn plv3-btn-teal" (click)="trackFbq('ViewContent',{content_name:'CTA Plan Bot'})">Quiero este plan →</a>
+      </div>
+      <!-- PLAN GROWTH -->
+      <div class="plv3-card rv">
+        <div class="plv3-bar plv3-bar-naranja"></div>
+        <div class="plv3-head">
+          <div class="plv3-name">Plan Growth</div>
+          <div class="plv3-tag plv3-tag-naranja">Sistema completo</div>
+          <div class="plv3-price-row"><span class="plv3-cur">U$D</span><span class="plv3-amt plv3-amt-naranja">690</span><span class="plv3-per">/mes</span></div>
+          <p class="plv3-desc">Delegás todo: anuncios, creatividades y automatización. Tu negocio vende mientras dormís.</p>
+        </div>
+        <div class="plv3-feats">
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-naranja">📊</div><span class="plv3-feat-text txt-on">Gestión Meta Ads</span><span class="plv3-tick tk-naranja">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-naranja">📅</div><span class="plv3-feat-text txt-on">Plan del Mes</span><span class="plv3-tick tk-naranja">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-naranja">💬</div><span class="plv3-feat-text txt-on">Soporte WhatsApp</span><span class="plv3-tick tk-naranja">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-naranja">🎨</div><span class="plv3-feat-text txt-on">Creatividades para anuncios</span><span class="plv3-tick tk-naranja">✓</span></div>
+          <div class="plv3-feat-row"><div class="plv3-feat-ico ic-naranja">🤖</div><span class="plv3-feat-text txt-on">Bot IA 24/7 · califica leads</span><span class="plv3-tick tk-naranja">✓</span></div>
+        </div>
+        <div class="plv3-bonus" style="color:#FFA726;background:rgba(230,81,0,.08);border:1px solid rgba(255,167,38,.3);">🎁 Setup IA bonificado · Valor U$D 200</div>
+        <a [routerLink]="['/']" [fragment]="'formulario'" class="plv3-btn plv3-btn-naranja" (click)="trackFbq('ViewContent',{content_name:'CTA Plan Growth'})">Quiero este plan →</a>
+      </div>
+    </div>
+    <div class="plv3-nota rv">
+      💡 Honorarios a mes vencido · Sin pago anticipado · No incluye inversión publicitaria en Meta
+    </div>
+  </div>
+</section>
